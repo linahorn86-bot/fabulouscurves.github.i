@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabulous Curves | Second Life</title>
+    <style>
+        :root {
+            --bg: #050505;           /* Rich Black */
+            --card-bg: #111111;      /* Card color */
+            --pink: #ff69b4;         /* Hot Pink from logo */
+            --sage: #9CAF88;         /* Sage Green accent */
+            --gold: #d4af37;         /* Gold trim from logo */
+            --text: #ffffff;
+        }
+
+        body { 
+            font-family: 'Playfair Display', serif; /* Elegant font */
+            background-color: var(--bg); 
+            color: var(--text); 
+            margin: 0; 
+            text-align: center;
+        }
+
+        .wrapper { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+
+        /* Brand Header */
+        .logo-container { margin-bottom: 20px; }
+        .logo-img { max-width: 300px; height: auto; border-radius: 10px; }
+        
+        .brand-name { 
+            font-size: 3.5rem; 
+            margin: 10px 0; 
+            color: var(--pink);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        .tagline { 
+            color: var(--sage); 
+            letter-spacing: 5px; 
+            font-size: 0.9rem; 
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+        /* Navigation Buttons */
+        .btn-stack { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+            gap: 15px; 
+            margin-bottom: 80px; 
+        }
+
+        .btn {
+            padding: 15px;
+            text-decoration: none;
+            color: var(--text);
+            border: 1px solid var(--gold);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            transition: 0.4s;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .btn:hover {
+            background: var(--pink);
+            color: white;
+            border-color: var(--pink);
+            box-shadow: 0 0 15px var(--pink);
+        }
+
+        .btn-slurl { border: 2px solid var(--pink); color: var(--pink); font-weight: bold; }
+
+        /* Gallery Section */
+        .section-title {
+            color: var(--gold);
+            font-size: 1.5rem;
+            letter-spacing: 4px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--sage);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .gallery { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+            gap: 30px; 
+        }
+
+        .item { 
+            background: var(--card-bg); 
+            border: 1px solid #222;
+            transition: 0.3s;
+        }
+
+        .item:hover { border-color: var(--sage); transform: translateY(-5px); }
+        .item img { width: 100%; display: block; }
+        .item-name { padding: 15px; color: var(--sage); letter-spacing: 1px; font-size: 0.8rem; }
+
+        footer { margin-top: 100px; color: #444; font-size: 0.7rem; letter-spacing: 2px; }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,900&family=Inter:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <div class="logo-container">
+                <img src="Fabulous_Curves_logo.jpg" alt="Fabulous Curves Logo" class="logo-img">
+            </div>
+            <h1 class="brand-name">Fabulous Curves</h1>
+            <p class="tagline">Original Mesh • Curvy Aesthetics</p>
+        </header>
+
+        <nav class="btn-stack">
+            <a href="#" class="btn btn-slurl">Visit In-World</a>
+            <a href="#" class="btn">Marketplace</a>
+            <a href="#" class="btn">Flickr Portfolio</a>
+            <a href="#" class="btn">Blogger App</a>
+        </nav>
+
+        <h2 class="section-title">Latest Drops</h2>
+        <div class="gallery">
+            <div class="item">
+                <img src="https://via.placeholder.com/600x600/111111/ff69b4?text=NEW+RELEASE" alt="Product">
+                <div class="item-name">New Arrival 01</div>
+            </div>
+            <div class="item">
+                <img src="https://via.placeholder.com/600x600/111111/9CAF88?text=NEW+RELEASE" alt="Product">
+                <div class="item-name">New Arrival 02</div>
+            </div>
+            <div class="item">
+                <img src="https://via.placeholder.com/600x600/111111/d4af37?text=NEW+RELEASE" alt="Product">
+                <div class="item-name">New Arrival 03</div>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2024 FABULOUS CURVES • SECOND LIFE ORIGINALS
+        </footer>
+    </div>
+
+</body>
+</html>
